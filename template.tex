@@ -1,0 +1,224 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[a4paper]{twentysecondcv} % a4paper for A4
+
+\usepackage{array,tabularx}
+\usepackage{multicol}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{me.jpg} % Profile picture
+\profilebrain{DMN.png}
+
+\cvname{Tam\'as Spis\'ak} % Your name
+\cvjobtitle{computer scientist Ph.D.} % Job title/career
+
+\cvdate{25 October 1986} % Date of birth
+\cvaddress{Essen, Germany} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+49 170 244 3155} % Phone number
+\cvsite{github.com/spisakt spisakt.github.io/pTFCE spisakt.github.io/RPN-signature} % Personal website
+\cvmail{tamas.spisak@uk-essen.de} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	 ABOUT ME
+%----------------------------------------------------------------------------------------
+
+\aboutme{
+\begin{itemize}
+\item{Neuroimaging methodology}
+\item{Machine Learning}
+\item{Brain Connectivity analysis}
+\item{Cognitive Neuroscience}
+\item{Neuropharmacology}
+\item{Pain and placebo mechanisms}
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+%	 SKILLS
+%----------------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+%\skills{{Machine Learning/5.8},{statistics/6},{/4.3},{programming/4},{Java/0.01}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{
+\begin{itemize}
+\item{Neuroimaging methods: \newline fMRI, DTI, DSC, ASL, PET, EEG/fMRI}
+\item{MRI artifacts}
+\item{Advanced statistics }
+\item{Software development}
+\item{Functional neuroanatomy \newline cognition, pain mechanisms}
+\end{itemize}
+}
+
+%----------------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 Current position
+%----------------------------------------------------------------------------------------
+\section{Professional Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{since 2017}{\large post-doc}{\normalsize University Hospital Essen}{Bingel-Lab, Department of Neurology}   
+\twentyitem{}{\normalsize {\color{gray} Imaging, connectivity and behaviour-based quantification, prediction and stratification in pain, placebo and extinction learning. \newline \hspace{-0.5cm}
+\vspace{-0.1cm}
+\bf{Developments: \newline
+     pTFCE: statistical cluster enhancement \newline
+     PUMI: modular neuroimaging pipeline library system\newline
+     RPN-signature: predictive modelling of pain sensitivity}.} }{}{}
+
+    \twentyitem{2014-2017}{\large analysis team leader}{\normalsize Gedeon Richter Plc., Hungary}{ Preclinical MR Imaging and Biomarker Center \newline Pharmacology and Drug Safety Research
+    {\emph{\small \color{black} }}}   
+\twentyitem{}{\small {\color{gray} Support of drug research projects with small-animal MR imaging, multi-source data integration and statistical analysis. }\newline {\color{gray}Pain, cognitive enhancement, Autism Spectrum Disorders, Obesity.} }{}{}
+\vspace{-0.8cm}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+\vspace{-0.1cm}
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2011-2015}{Ph.D. {\normalfont in Computer Science}}{University of Debrecen, Hungary}{\emph{\footnotesize Doctoral School of Informatics \newline \color{gray} thesis: Voxel-wise Motion Artifacts in fMRI Brain Connectivity Analysis \newline Software development: BrainMOD, BrainCON}}
+    \twentyitem{2013-2014}{visiting researcher}{Kempenhaeghe, TU/e, The Netherlands}{\footnotesize ENIAC Central Nervous System Imaging JU project \newline
+   \textit{ \color{gray} dynamic EEG/fMRI brain connectivity in temporal lobe epilepsy}}
+	\twentyitem{2005-2011}{M.Sc. student in computer science}{University of Debrecen, Hungary}{\footnotesize Faculty of Computer Science \newline
+    \textit{ \color{gray} thesis: BrainLOC - Integrated brain atlas-based localization and region analysis}}
+%	\twentyitem{2001-2005}{High School}{Ny\'iregyh\'aza, Hungary}{\textit{Specializing in mathematics}}
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+\noindent\begin{tabularx}{\linewidth}{@{}>{\hsize=1.6\hsize}X>{\hsize=.5\hsize}X@{}}
+	\vspace{-0.3cm}
+%----------------------------------------------------------------------------------------
+%	 Technical skills
+%----------------------------------------------------------------------------------------
+\section{computer skills}
+
+\vspace{0cm}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{programming}{\small C/C++, python, R, MatLab, bash}
+    \twentyitemshort{software}{\small Inkscape, Gimp, \LaTeX}
+     \twentyitemshort{neuroimaging}{\small Nipype, FSL, SPM, Slicer, Freesurfer, \newline AFNI, MNI Tools, BrainVoyager} 
+	\twentyitemshort{HPC}{\small SGE, Slurm, MPI, OpenMP, pthread}
+	\twentyitemshort{machine learning}{\small scikit-learn, nilearn, tensorflow, caret, glinternet}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+&
+%----------------------------------------------------------------------------------------
+%	 Language
+%----------------------------------------------------------------------------------------
+\section{language skills}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemshort{Hungarian}{native}
+     \twentyitemshort{English}{C1} 
+	\twentyitemshort{German}{B2}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}\\
+\end{tabularx}
+%----------------------------------------------------------------------------------------
+%	 AWARDS
+%----------------------------------------------------------------------------------------
+\section{grants and awards}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+    \twentyitemshort{2017-}{\small  H2020 Marie Sk\l odowska-Curie Individual Fellowship}
+	\twentyitemshort{2016}{\small  main prize of Richter Innovative Research Fund}
+	\twentyitemshort{2015}{\small Hungarian National Excellence award}
+    \twentyitemshort{2015}{\small Gy\"orgy Hevesy Izinta award} 
+	\twentyitemshort{2013-2014}{\small J\'anos Ap\'aczai Csere Hungarian National Excellence Grant}
+	\twentyitemshort{2013}{\small Campus Hungary Scholarship}
+    \twentyitemshort{2013}{\small Gy\"orgy Hevesy award}
+%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+%----------------------------------------------------------------------------------------
+%	 PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\vspace{0.1cm}
+%%%%%%%%%TWENTY LIST SHORTITEMS%%%%%%%%%%%%%%
+%%% Two arguments: date; title/description %%%%%%%%%%
+
+\section{selected publications}
+
+\vspace{-0.1cm}
+\small
+
+T Spis\'ak\color{gray}, Zs Spis\'ak, M Zunhammer, U Bingel, S Smith, T Nichols, ZT Kincses,
+\textit{\color{black}Probabilistic TFCE: A generalized combination of cluster size and voxel intensity to increase statistical power}, NeuroImage 185, 12-26, 2019\newline
+\textbf{T Spisak}, et al., \textit{\color{black}Purkinje cell number-correlated cerebrocerebellar circuit anomaly in the valproate model of autism}, Nature  Scientific Reports, in press, 2019 \newline
+\textbf{T Spis\'ak}, \color{gray} Zs Pozsgay, Cs Aranyi, S D\'avid, P Kocsis, G Nyitrai, D Gaj\'ari, M Emri, A Czurk\'o, ZT Kincses, \textit{\color{black}Central sensitization-related changes of effective and functional connectivity in the rat inflammatory trigeminal pain model.} Neuroscience, 2016. \newline 
+{\color{black}T Spis\'ak}, P Ossenblok, A Colon, W Compagner, SA Kis, G Opposits, M Emri, \textit{\color{black}Individual functional statistical parametric networks related to interictal epileptic EEG discharges: a dynamic sliding-window study} ECR [S.l.] C-2088, 10.1594/ecr2014/C-2088, 2014.  \newline 
+{\color{black}T Spis\'ak} et al., \textit{\color{black} Voxel-wise motion artifacts in population-level whole-brain connectivity analysis of resting-state fMRI}. PLoS One 9(9): e10494, 2014.
+
+\section{scientometric data}
+
+\begin{twentyshort} % Environment for a short list with no descriptions
+	\twentyitemlong{peer-reviewed (+under review) journal publications}{16(+5)}
+     \twentyitemlong{conference papers, posters}{25} 
+	\twentyitemlong{Independent citations}{182}
+    \twentyitemlong{H-index}{8}
+    \twentyitemlong{(co-)supervision (Msc/PhD students)}{5/2}
+	%\twentyitemshort{<dates>}{<title/description>}
+\end{twentyshort}
+
+%----------------------------------------------------------------------------------------
+%	 OTHER INFORMATION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	 SECOND PAGE EXAMPLE
+%----------------------------------------------------------------------------------------
+
+%\newpage % Start a new page
+
+%\makeprofile % Print the sidebar
+
+%\section{other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%\section{other information}
+
+%\subsection{Review}
+
+%Alice approaches Wonderland as an anthropologist, but maintains a strong sense of noblesse oblige that comes with her class status. She has confidence in her social position, education, and the Victorian virtue of good manners. Alice has a feeling of entitlement, particularly when comparing herself to Mabel, whom she declares has a ``poky little house," and no toys. Additionally, she flaunts her limited information base with anyone who will listen and becomes increasingly obsessed with the importance of good manners as she deals with the rude creatures of Wonderland. Alice maintains a superior attitude and behaves with solicitous indulgence toward those she believes are less privileged.
+
+%----------------------------------------------------------------------------------------
+
+\end{document} 
